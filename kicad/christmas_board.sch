@@ -1,4 +1,484 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L keebio:ProMicro U1
+U 1 1 5FC91452
+P 3150 2600
+F 0 "U1" H 3150 3437 60  0000 C CNN
+F 1 "ProMicro" H 3150 3331 60  0000 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro-BackSide" V 4200 100 60  0001 C CNN
+F 3 "" V 4200 100 60  0001 C CNN
+	1    3150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FC92C85
+P 1600 4750
+F 0 "#PWR0101" H 1600 4500 50  0001 C CNN
+F 1 "GND" H 1605 4577 50  0000 C CNN
+F 2 "" H 1600 4750 50  0001 C CNN
+F 3 "" H 1600 4750 50  0001 C CNN
+	1    1600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5FC93095
+P 1600 4600
+F 0 "#PWR0102" H 1600 4450 50  0001 C CNN
+F 1 "VCC" H 1615 4773 50  0000 C CNN
+F 2 "" H 1600 4600 50  0001 C CNN
+F 3 "" H 1600 4600 50  0001 C CNN
+	1    1600 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3850 2250 2    50   Input ~ 0
+reset
+Text GLabel 1250 5500 0    50   Input ~ 0
+reset
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5FC95615
+P 1450 5500
+F 0 "SW1" H 1450 5785 50  0000 C CNN
+F 1 "SW_Push" H 1450 5694 50  0000 C CNN
+F 2 "Keebio-Parts:SW_SPST_TL3342" H 1450 5700 50  0001 C CNN
+F 3 "~" H 1450 5700 50  0001 C CNN
+	1    1450 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FC95AE3
+P 1650 5500
+F 0 "#PWR0103" H 1650 5250 50  0001 C CNN
+F 1 "GND" H 1655 5327 50  0000 C CNN
+F 2 "" H 1650 5500 50  0001 C CNN
+F 3 "" H 1650 5500 50  0001 C CNN
+	1    1650 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 4750 0    50   Input ~ 0
+ground
+Wire Wire Line
+	1450 4750 1600 4750
+Text GLabel 1450 4600 0    50   Input ~ 0
+power
+Wire Wire Line
+	1450 4600 1600 4600
+Text GLabel 3850 2350 2    50   Input ~ 0
+power
+Text GLabel 2450 2250 0    50   Input ~ 0
+ground
+Text GLabel 2450 2350 0    50   Input ~ 0
+ground
+Text GLabel 3850 2150 2    50   Input ~ 0
+ground
+NoConn ~ 3850 2050
+$Comp
+L LED:WS2812B D1
+U 1 1 5FC9CCE2
+P 2950 4500
+F 0 "D1" H 3294 4546 50  0000 L CNN
+F 1 "WS2812B" H 3294 4455 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3000 4200 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3050 4125 50  0001 L TNN
+	1    2950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 5FC9D68D
+P 2950 4200
+F 0 "#PWR0104" H 2950 4050 50  0001 C CNN
+F 1 "VCC" H 2965 4373 50  0000 C CNN
+F 2 "" H 2950 4200 50  0001 C CNN
+F 3 "" H 2950 4200 50  0001 C CNN
+	1    2950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5FC9DC85
+P 2950 4800
+F 0 "#PWR0105" H 2950 4550 50  0001 C CNN
+F 1 "GND" H 2955 4627 50  0000 C CNN
+F 2 "" H 2950 4800 50  0001 C CNN
+F 3 "" H 2950 4800 50  0001 C CNN
+	1    2950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D2
+U 1 1 5FC9FC74
+P 3550 4500
+F 0 "D2" H 3894 4546 50  0000 L CNN
+F 1 "WS2812B" H 3894 4455 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3600 4200 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3650 4125 50  0001 L TNN
+	1    3550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 5FC9FC7A
+P 3550 4200
+F 0 "#PWR0106" H 3550 4050 50  0001 C CNN
+F 1 "VCC" H 3565 4373 50  0000 C CNN
+F 2 "" H 3550 4200 50  0001 C CNN
+F 3 "" H 3550 4200 50  0001 C CNN
+	1    3550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5FC9FC80
+P 3550 4800
+F 0 "#PWR0107" H 3550 4550 50  0001 C CNN
+F 1 "GND" H 3555 4627 50  0000 C CNN
+F 2 "" H 3550 4800 50  0001 C CNN
+F 3 "" H 3550 4800 50  0001 C CNN
+	1    3550 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D3
+U 1 1 5FCA1113
+P 4150 4500
+F 0 "D3" H 4494 4546 50  0000 L CNN
+F 1 "WS2812B" H 4494 4455 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 4200 4200 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4250 4125 50  0001 L TNN
+	1    4150 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 5FCA1119
+P 4150 4200
+F 0 "#PWR0108" H 4150 4050 50  0001 C CNN
+F 1 "VCC" H 4165 4373 50  0000 C CNN
+F 2 "" H 4150 4200 50  0001 C CNN
+F 3 "" H 4150 4200 50  0001 C CNN
+	1    4150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5FCA111F
+P 4150 4800
+F 0 "#PWR0109" H 4150 4550 50  0001 C CNN
+F 1 "GND" H 4155 4627 50  0000 C CNN
+F 2 "" H 4150 4800 50  0001 C CNN
+F 3 "" H 4150 4800 50  0001 C CNN
+	1    4150 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D4
+U 1 1 5FCA29A4
+P 4750 4500
+F 0 "D4" H 5094 4546 50  0000 L CNN
+F 1 "WS2812B" H 5094 4455 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 4800 4200 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4850 4125 50  0001 L TNN
+	1    4750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0110
+U 1 1 5FCA29AA
+P 4750 4200
+F 0 "#PWR0110" H 4750 4050 50  0001 C CNN
+F 1 "VCC" H 4765 4373 50  0000 C CNN
+F 2 "" H 4750 4200 50  0001 C CNN
+F 3 "" H 4750 4200 50  0001 C CNN
+	1    4750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5FCA29B0
+P 4750 4800
+F 0 "#PWR0111" H 4750 4550 50  0001 C CNN
+F 1 "GND" H 4755 4627 50  0000 C CNN
+F 2 "" H 4750 4800 50  0001 C CNN
+F 3 "" H 4750 4800 50  0001 C CNN
+	1    4750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D5
+U 1 1 5FCA3DC3
+P 5350 4500
+F 0 "D5" H 5694 4546 50  0000 L CNN
+F 1 "WS2812B" H 5694 4455 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 5400 4200 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5450 4125 50  0001 L TNN
+	1    5350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0112
+U 1 1 5FCA3DC9
+P 5350 4200
+F 0 "#PWR0112" H 5350 4050 50  0001 C CNN
+F 1 "VCC" H 5365 4373 50  0000 C CNN
+F 2 "" H 5350 4200 50  0001 C CNN
+F 3 "" H 5350 4200 50  0001 C CNN
+	1    5350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5FCA3DCF
+P 5350 4800
+F 0 "#PWR0113" H 5350 4550 50  0001 C CNN
+F 1 "GND" H 5355 4627 50  0000 C CNN
+F 2 "" H 5350 4800 50  0001 C CNN
+F 3 "" H 5350 4800 50  0001 C CNN
+	1    5350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D6
+U 1 1 5FCA522E
+P 5950 4500
+F 0 "D6" H 6294 4546 50  0000 L CNN
+F 1 "WS2812B" H 6294 4455 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6000 4200 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6050 4125 50  0001 L TNN
+	1    5950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0114
+U 1 1 5FCA5234
+P 5950 4200
+F 0 "#PWR0114" H 5950 4050 50  0001 C CNN
+F 1 "VCC" H 5965 4373 50  0000 C CNN
+F 2 "" H 5950 4200 50  0001 C CNN
+F 3 "" H 5950 4200 50  0001 C CNN
+	1    5950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5FCA523A
+P 5950 4800
+F 0 "#PWR0115" H 5950 4550 50  0001 C CNN
+F 1 "GND" H 5955 4627 50  0000 C CNN
+F 2 "" H 5950 4800 50  0001 C CNN
+F 3 "" H 5950 4800 50  0001 C CNN
+	1    5950 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6250 4500
+Text GLabel 2450 2050 0    50   Input ~ 0
+leds
+Text GLabel 2650 4500 0    50   Input ~ 0
+leds
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5FCAB6F9
+P 6300 2250
+F 0 "SW3" H 6300 2535 50  0000 C CNN
+F 1 "SW_Push" H 6300 2444 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 6300 2450 50  0001 C CNN
+F 3 "~" H 6300 2450 50  0001 C CNN
+	1    6300 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5FCB3E4C
+P 6650 2250
+F 0 "SW4" H 6650 2535 50  0000 C CNN
+F 1 "SW_Push" H 6650 2444 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 6650 2450 50  0001 C CNN
+F 3 "~" H 6650 2450 50  0001 C CNN
+	1    6650 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5FCB44F9
+P 7000 2250
+F 0 "SW5" H 7000 2535 50  0000 C CNN
+F 1 "SW_Push" H 7000 2444 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7000 2450 50  0001 C CNN
+F 3 "~" H 7000 2450 50  0001 C CNN
+	1    7000 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5FCC45BF
+P 5950 2250
+F 0 "SW2" H 5950 2535 50  0000 C CNN
+F 1 "SW_Push" H 5950 2444 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 5950 2450 50  0001 C CNN
+F 3 "~" H 5950 2450 50  0001 C CNN
+	1    5950 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5FCC876A
+P 7700 2250
+F 0 "SW7" H 7700 2535 50  0000 C CNN
+F 1 "SW_Push" H 7700 2444 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7700 2450 50  0001 C CNN
+F 3 "~" H 7700 2450 50  0001 C CNN
+	1    7700 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5FCC8770
+P 8050 2250
+F 0 "SW8" H 8050 2535 50  0000 C CNN
+F 1 "SW_Push" H 8050 2444 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8050 2450 50  0001 C CNN
+F 3 "~" H 8050 2450 50  0001 C CNN
+	1    8050 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5FCC8776
+P 8400 2250
+F 0 "SW9" H 8400 2535 50  0000 C CNN
+F 1 "SW_Push" H 8400 2444 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8400 2450 50  0001 C CNN
+F 3 "~" H 8400 2450 50  0001 C CNN
+	1    8400 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5FCC877C
+P 7350 2250
+F 0 "SW6" H 7350 2535 50  0000 C CNN
+F 1 "SW_Push" H 7350 2444 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7350 2450 50  0001 C CNN
+F 3 "~" H 7350 2450 50  0001 C CNN
+	1    7350 2250
+	0    1    1    0   
+$EndComp
+Text GLabel 2450 2650 0    50   Input ~ 0
+row0
+Text GLabel 2450 2750 0    50   Input ~ 0
+col0
+Text GLabel 2450 2850 0    50   Input ~ 0
+col1
+Text GLabel 2450 2950 0    50   Input ~ 0
+col2
+Text GLabel 2450 3050 0    50   Input ~ 0
+col3
+Text GLabel 2450 3150 0    50   Input ~ 0
+col4
+Text GLabel 3850 2550 2    50   Input ~ 0
+col6
+Text GLabel 3850 2450 2    50   Input ~ 0
+col5
+Text GLabel 3850 2650 2    50   Input ~ 0
+col7
+Text GLabel 5700 2450 0    50   Input ~ 0
+row0
+Wire Wire Line
+	5700 2450 5950 2450
+Connection ~ 5950 2450
+Wire Wire Line
+	5950 2450 6300 2450
+Connection ~ 6300 2450
+Wire Wire Line
+	6300 2450 6650 2450
+Connection ~ 6650 2450
+Wire Wire Line
+	6650 2450 7000 2450
+Connection ~ 7000 2450
+Wire Wire Line
+	7000 2450 7350 2450
+Connection ~ 7350 2450
+Wire Wire Line
+	7350 2450 7700 2450
+Connection ~ 7700 2450
+Wire Wire Line
+	7700 2450 8050 2450
+Connection ~ 8050 2450
+Wire Wire Line
+	8050 2450 8400 2450
+Text GLabel 5950 2050 1    50   Input ~ 0
+col0
+Text GLabel 6300 2050 1    50   Input ~ 0
+col1
+Text GLabel 7000 2050 1    50   Input ~ 0
+col3
+Text GLabel 6650 2050 1    50   Input ~ 0
+col2
+Text GLabel 7350 2050 1    50   Input ~ 0
+col4
+Text GLabel 7700 2050 1    50   Input ~ 0
+col5
+Text GLabel 8050 2050 1    50   Input ~ 0
+col6
+Text GLabel 8400 2050 1    50   Input ~ 0
+col7
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5FCEA34E
+P 4950 3400
+F 0 "J2" H 4868 2975 50  0000 C CNN
+F 1 "Conn_01x04" H 4868 3066 50  0000 C CNN
+F 2 "kbd:OLED" H 4950 3400 50  0001 C CNN
+F 3 "~" H 4950 3400 50  0001 C CNN
+	1    4950 3400
+	-1   0    0    1   
+$EndComp
+Text GLabel 2450 2450 0    50   Input ~ 0
+sda
+Text GLabel 2450 2550 0    50   Input ~ 0
+scl
+Text GLabel 5150 3200 2    50   Input ~ 0
+ground
+Text GLabel 5150 3300 2    50   Input ~ 0
+power
+Text GLabel 5150 3400 2    50   Input ~ 0
+scl
+Text GLabel 5150 3500 2    50   Input ~ 0
+sda
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 5FD03142
+P 4050 3050
+F 0 "J1" H 4130 3042 50  0000 L CNN
+F 1 "Conn_01x08" H 4130 2951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x04_P2.00mm_Vertical" H 4050 3050 50  0001 C CNN
+F 3 "~" H 4050 3050 50  0001 C CNN
+	1    4050 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3850 3450 0    50   Input ~ 0
+ground
+Text GLabel 3850 3350 0    50   Input ~ 0
+power
+Text GLabel 2450 2150 0    50   Input ~ 0
+rx1
+Text GLabel 3850 3250 0    50   Input ~ 0
+rx1
 $EndSCHEMATC
