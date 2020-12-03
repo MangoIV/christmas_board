@@ -1,0 +1,6 @@
+[submodule "kicad/keebio-components"]
+	path = kicad/keebio-components
+	url = https://github.com/keebio/keebio-components.git
+[submodule "kicad/Keebio-Parts.pretty"]
+	path = kicad/Keebio-Parts.pretty
+	url = https://github.com/keebio/Keebio-Parts.pretty.git
